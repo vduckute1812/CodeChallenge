@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Session 2</title>
+</head>
+<body>
+	<div id="app">
+		<hello2></hello2>
+		<hello2></hello2>
+		<h1 ref="heading2">{{ title }}</h1>
+		<button @click="changeName" ref="myBytton">Show paragraph</button><br>
+		<button @click="count++">Update</button><br>
+		<p>{{count}}</p>
+		<button @click="destroy">Destroy</button>
+	</div>
+	<div id="app2">
+		<hello2></hello2>
+		<hello2></hello2>
+	</div>
+	<script type="text/javascript" src="app.js"></script>
+	<script type="text/javascript" src="vue.js"></script>
+</body>
+</html>

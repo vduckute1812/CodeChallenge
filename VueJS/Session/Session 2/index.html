@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Session 2</title>
+	<script type="text/javascript" src="vue.js"></script>
+</head>
+<body>
+	<div id="app">
+		<ul>
+			<li v-for="(ingredient, index) in ingredients" :key="ingredient">
+				{{ ingredient }}({{index}})
+			</li>
+		</ul>
+		<hr>
+		<hr>
+		<ul>
+			<li v-for="person in persons">
+				<div v-for="(value, key) in person">
+					{{key}}: {{value}}
+				</div>
+			</li>
+		</ul>
+		<span v-for="n in 10">
+			{{n}}
+		</span>
+	</div>
+
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
